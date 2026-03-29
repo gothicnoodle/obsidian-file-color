@@ -1,50 +1,42 @@
-# Obsidian File Color
-
-![Obsidian File Color Banner](./docs/images/hero-rounded.png)
-
-## What is this?
-This is a plugin for [Obsidian](https://obsidian.md), which allows you to select colors for your files and folders in the file explorer.
-
-## Usage
-
-Setting the color for a file or folder is done by right clicking on the file in the file explorer and selecting `Set color`. This opens a modal where you can select all the colors defined in the plugin palette.
-
-![Setting a color](./docs/images/set-color-rounded.gif)
-
-### Changing the palette
-
-To add colors to the palette open the plugin settings, and click the `+` button. Then use the color picker to select the color, and input a name for the color. Afterwards it will appear in the `Set color` modal. You can add as many colors as you need.
-
-![Adding a color](./docs/images/add-color-rounded.gif)
-
-### Options
-
-- Cascade Colors: if turned on, colors on folders will cascade to their children. Set colors on children to override parents.
-- Background Colors: if turned on, the background is colored instead of the text.
-
-## Compatibility
-
-This plugin has been tested with a few other community plugins:
-
-* [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
-  * Should work out of the box, and colors should automatically be applied to the icons as well.
-* [Folder Note](https://github.com/aidenlx/folder-note-core)
-  * Will also work out of the box, however the underlines added to the files will not be colored.
-  * Personally I use the following CSS snippet locally:
-
-    ```css
-    .nav-folder.alx-folder-with-note>.nav-folder-title>.nav-folder-title-content {
-      text-decoration-style: dotted;
-      text-decoration-color: inherit;
-    }
-    ```
-    Which will make make the underline use the colors defined by this plugin. The result looks something like this:
-
-    ![Example with icons and folder notes](./docs/images/icons-notes-rounded.png)
----
-
-<div align="center">
-  <a href="https://www.buymeacoffee.com/ecustic">
-    <img src="https://media2.giphy.com/media/7ssLleBvWvESbx0BuG/giphy.gif" />
-  </a>
-</div>
+File Color v2
+An enhanced fork of obsidian-file-color by ecustic, with a redesigned color picker and new features.
+![File Color v2 Banner](docs/images/hero-rounded.png)
+What's New in v2
+Full 16 million color picker — pick any color directly from the right-click modal
+Basic palette — 7 fixed colors (red, orange, yellow, green, blue, purple, grey) always available
+Favorites — save colors you use often; hover to see a red minus badge to remove
+Recent colors — automatically tracks your last 15 used colors with expand/collapse
+Star from recent — hover any recent color to star it directly into favorites
+Independent cascade controls — cascade to subfolders and files separately, right from the modal
+Cleaner UI — everything accessible from one right-click, no need to visit settings to add colors
+Usage
+Setting a color
+Right-click any file or folder in the file explorer and select Set color.
+![Setting a color](docs/images/set-color-rounded.gif)
+The color modal
+The modal is organized into sections:
+Basic — 7 fixed colors plus a None option. Click any to apply instantly.
+Favorites — your starred colors. Hover to reveal the red − badge to remove.
+Recent — the last 5 colors you used. Click ▼ +N more to expand up to 15. Hover any circle to star it.
+Color picker — pick any custom color using the color wheel or type a hex value. Click ★ to save to favorites, or Apply to use it once.
+Cascade controls
+At the top of the modal are two checkboxes:
+Subfolders — cascade the folder color to all child folders
+Files — cascade the folder color to all files inside the folder
+These can be toggled independently so you can have colored folders with uncolored files for contrast.
+Options
+In Settings → File Color v2 you can also:
+Toggle Color Background to color the background instead of the text
+Manage your saved palette
+Installation
+From Obsidian Community Plugins
+Search for File Color v2 in Settings → Community Plugins → Browse.
+Manual Installation
+Download `main.js`, `styles.css`, and `manifest.json` from the latest release
+Create a folder called `file-color-v2` in your vault's `.obsidian/plugins/` folder
+Copy the three downloaded files into that folder
+Enable the plugin in Settings → Community Plugins
+Credits
+This plugin is a fork of obsidian-file-color by ecustic. The original plugin provided the foundation that this version builds on. All credit for the core architecture goes to the original author.
+License
+MIT
