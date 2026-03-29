@@ -94,6 +94,7 @@ export class FileColorPlugin extends Plugin {
       )
       .join('\n')
   }
+
   applyColorStyles = debounce(this.applyColorStylesInternal, 50, true);
 
   private applyColorStylesInternal() {
@@ -107,7 +108,7 @@ export class FileColorPlugin extends Plugin {
             .split(' ')
             .filter((cls) => !cls.startsWith('file-color'))
 
-            const file = this.settings.fileColors.find(
+          const file = this.settings.fileColors.find(
             (file) => file.path === path
           )
 
@@ -116,7 +117,10 @@ export class FileColorPlugin extends Plugin {
             itemClasses.push('file-color-color-' + file.color)
             itemClasses.push('file-color-type-' + cssType)
             if (this.settings.cascadeColors) {
-              itemClasses.push('file-color-cascade')
+              itemClasses.push('file-color-cascade-folders')
+            }
+            if (this.settings.cascadeToFiles) {
+              itemClasses.push('file-color-cascade-files')
             }
           }
 
@@ -125,5 +129,4 @@ export class FileColorPlugin extends Plugin {
       )
     })
   }
-
 }
