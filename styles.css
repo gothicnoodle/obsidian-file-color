@@ -5,9 +5,21 @@
   color: var(--file-color-color);
 }
 
-/* TEXT COLORING, WITH CASCADE */
-.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-text.file-color-cascade .nav-folder-title,
-.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-text.file-color-cascade .nav-file-title
+/* TEXT COLORING, CASCADE TO SUBFOLDERS ONLY */
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-text.file-color-cascade-folders .nav-folder-title
+{
+  color: var(--file-color-color);
+}
+
+/* TEXT COLORING, CASCADE TO FILES ONLY */
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-text.file-color-cascade-files .nav-file-title
+{
+  color: var(--file-color-color);
+}
+
+/* TEXT COLORING, CASCADE TO BOTH */
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-text.file-color-cascade-folders.file-color-cascade-files .nav-folder-title,
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-text.file-color-cascade-folders.file-color-cascade-files .nav-file-title
 {
   color: var(--file-color-color);
 }
@@ -19,9 +31,21 @@
   background-color: color-mix(in srgb, var(--file-color-color) 15%, transparent);
 }
 
-/* BACKGROUND COLORING, WITH CASCADE */
-.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-background.file-color-cascade .nav-folder-title,
-.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-background.file-color-cascade .nav-file-title
+/* BACKGROUND COLORING, CASCADE TO SUBFOLDERS ONLY */
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-background.file-color-cascade-folders .nav-folder-title
+{
+  background-color: color-mix(in srgb, var(--file-color-color) 15%, transparent);
+}
+
+/* BACKGROUND COLORING, CASCADE TO FILES ONLY */
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-background.file-color-cascade-files .nav-file-title
+{
+  background-color: color-mix(in srgb, var(--file-color-color) 15%, transparent);
+}
+
+/* BACKGROUND COLORING, CASCADE TO BOTH */
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-background.file-color-cascade-folders.file-color-cascade-files .nav-folder-title,
+.workspace-leaf-content[data-type="file-explorer"] .nav-files-container .file-color-file.file-color-type-background.file-color-cascade-folders.file-color-cascade-files .nav-file-title
 {
   background-color: color-mix(in srgb, var(--file-color-color) 15%, transparent);
 }
