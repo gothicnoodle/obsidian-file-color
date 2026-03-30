@@ -3,7 +3,7 @@
   "name": "File Color v2",
   "version": "2.0.0",
   "minAppVersion": "0.15.0",
-  "description": Set colors on folders and files in the file explorer with a full color picker, favorites, recent colors, and independent cascade controls.,
+  "description": Set colors on folders and files in the file explorer with a full color picker, favorites, recent colors, and independent cascade controls,
   "author": "gothicnoodle",
   "authorUrl": "https://github.com/gothicnoodle",
   "isDesktopOnly": false
