@@ -1,6 +1,8 @@
 File Color v2
 An enhanced fork of obsidian-file-color by ecustic, with a redesigned color picker and new features.
 ![File Color v2 Banner](docs/images/hero-rounded.png)
+
+
 What's New in v2
 Full 16 million color picker — pick any color directly from the right-click modal
 Basic palette — 7 fixed colors (red, orange, yellow, green, blue, purple, grey) always available
@@ -12,7 +14,9 @@ Cleaner UI — everything accessible from one right-click, no need to visit sett
 Usage
 Setting a color
 Right-click any file or folder in the file explorer and select Set color.
-![Setting a color](docs/images/set-color-rounded.gif)
+![File Color v2 Demo](docs/images/tutorial.gif)
+
+
 The color modal
 The modal is organized into sections:
 Basic — 7 fixed colors plus a None option. Click any to apply instantly.
