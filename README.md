@@ -16,6 +16,7 @@ Cleaner UI — everything accessible from one right-click, no need to visit sett
 Usage
 Setting a color
 Right-click any file or folder in the file explorer and select Set color.
+
 ![File Color v2 Demo](docs/images/tutorial.gif)
 
 
