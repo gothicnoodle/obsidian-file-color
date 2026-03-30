@@ -10,7 +10,9 @@ Favorites — save colors you use often; hover to see a red minus badge to remov
 Recent colors — automatically tracks your last 15 used colors with expand/collapse
 Star from recent — hover any recent color to star it directly into favorites
 Independent cascade controls — cascade to subfolders and files separately, right from the modal
-Cleaner UI — everything accessible from one right-click, no need to visit settings to add colors
+Cleaner UI — everything accessible from one right-click, no need to visit settings to add colors.
+
+
 Usage
 Setting a color
 Right-click any file or folder in the file explorer and select Set color.
