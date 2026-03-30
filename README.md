@@ -1,5 +1,7 @@
 File Color v2
+
 An enhanced fork of obsidian-file-color by ecustic, with a redesigned color picker and new features.
+
 ![File Color v2 Banner](docs/images/hero-rounded.png)
 
 
